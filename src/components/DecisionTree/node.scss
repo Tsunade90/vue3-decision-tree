@@ -1,0 +1,411 @@
+// 线样式
+$border-style: solid;
+// 线宽
+$border-width: 1px;
+// 弧度
+$border-radius: 3px;
+
+.vue-decision-tree-node {
+  $node: &;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &.ltr,
+  &.rtl {
+    #{$node}-line {
+      top: 0;
+      bottom: 0;
+
+      &::before,
+      &::after {
+        left: 0;
+        height: 50%;
+        right: 0;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    #{$node}-content {
+      #{$node}-sub-line {
+        top: 0;
+        bottom: 0;
+
+        &::after {
+          left: 0;
+          right: 0;
+          top: 50%;
+          height: $border-width;
+          border-width: 0 0 $border-width 0;
+        }
+      }
+    }
+
+    &:first-of-type {
+      > #{$node}-line {
+        &::after {
+          bottom: -$border-width;
+        }
+      }
+    }
+
+    &.alone {
+      &:last-of-type {
+        > #{$node}-line {
+          &::before {
+            border-width: 0 0 $border-width 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.ttb,
+  &.btt {
+    #{$node}-children {
+      display: flex;
+    }
+
+    #{$node}-line {
+      left: 0;
+      right: 0;
+
+      &::before,
+      &::after {
+        top: 0;
+        width: 50%;
+        bottom: 0;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+
+    #{$node}-content {
+      #{$node}-sub-line {
+        left: 0;
+        right: 0;
+
+        &::after {
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          width: $border-width;
+          border-width: 0 $border-width 0 0;
+        }
+      }
+    }
+
+    &:first-of-type {
+      > #{$node}-line {
+        &::after {
+          right: -$border-width;
+        }
+      }
+    }
+
+    &.alone {
+      &:last-of-type {
+        > #{$node}-line {
+          &::before {
+            border-width: 0 $border-width 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.ltr {
+    flex-flow: row nowrap;
+
+    #{$node}-line {
+      left: 0;
+
+      &::before {
+        border-width: 0 0 $border-width $border-width;
+      }
+
+      &::after {
+        border-width: 0 0 0 $border-width;
+      }
+    }
+
+    #{$node}-content {
+      #{$node}-sub-line {
+        right: 0;
+      }
+    }
+
+    &:first-of-type {
+      > #{$node}-line {
+        &::after {
+          border-width: $border-width 0 0 $border-width;
+          border-top-left-radius: $border-radius;
+        }
+      }
+    }
+
+    &:last-of-type {
+      > #{$node}-line {
+        &::before {
+          border-width: 0 0 $border-width $border-width;
+          border-bottom-left-radius: $border-radius;
+        }
+      }
+    }
+
+    &.alone {
+      &:last-of-type {
+        > #{$node}-line {
+          &::before {
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.rtl {
+    flex-flow: row-reverse nowrap;
+
+    #{$node}-line {
+      right: 0;
+
+      &::before {
+        border-width: 0 $border-width $border-width 0;
+      }
+
+      &::after {
+        border-width: 0 $border-width 0 0;
+      }
+    }
+
+    #{$node}-content {
+      #{$node}-sub-line {
+        left: 0;
+      }
+    }
+
+    &:first-of-type {
+      > #{$node}-line {
+        &::after {
+          border-width: $border-width $border-width 0 0;
+          border-top-right-radius: $border-radius;
+        }
+      }
+    }
+
+    &:last-of-type {
+      > #{$node}-line {
+        &::before {
+          border-width: 0 $border-width $border-width 0;
+          border-bottom-right-radius: $border-radius;
+        }
+      }
+    }
+
+    &.alone {
+      &:last-of-type {
+        > #{$node}-line {
+          &::before {
+            border-bottom-right-radius: 0;
+          }
+        }
+      }
+    }
+
+    &.root {
+      justify-content: flex-end;
+    }
+  }
+
+  &.ttb {
+    flex-flow: column nowrap;
+
+    #{$node}-line {
+      top: 0;
+
+      &::before {
+        border-width: $border-width $border-width 0 0;
+      }
+
+      &::after {
+        border-width: $border-width 0 0 0;
+      }
+    }
+
+    #{$node}-content {
+      #{$node}-sub-line {
+        bottom: 0;
+      }
+    }
+
+    &:first-of-type {
+      > #{$node}-line {
+        &::after {
+          border-width: $border-width 0 0 $border-width;
+          border-top-left-radius: $border-radius;
+        }
+      }
+    }
+
+    &:last-of-type {
+      > #{$node}-line {
+        &::before {
+          border-width: $border-width $border-width 0 0;
+          border-top-right-radius: $border-radius;
+        }
+      }
+    }
+
+    &.alone {
+      &:last-of-type {
+        > #{$node}-line {
+          &::before {
+            border-top-right-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.btt {
+    flex-flow: column-reverse nowrap;
+
+    #{$node}-line {
+      bottom: 0;
+
+      &::before {
+        border-width: 0 $border-width $border-width 0;
+      }
+
+      &::after {
+        border-width: 0 0 $border-width 0;
+      }
+    }
+
+    #{$node}-content {
+      #{$node}-sub-line {
+        top: 0;
+      }
+    }
+
+    &:first-of-type {
+      > #{$node}-line {
+        &::after {
+          border-width: 0 0 $border-width $border-width;
+          border-bottom-left-radius: $border-radius;
+        }
+      }
+    }
+
+    &:last-of-type {
+      > #{$node}-line {
+        &::before {
+          border-width: 0 $border-width $border-width 0;
+          border-bottom-right-radius: $border-radius;
+        }
+      }
+    }
+
+    &.alone {
+      &:last-of-type {
+        > #{$node}-line {
+          &::before {
+            border-bottom-right-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #{$node}-line {
+    position: absolute;
+    z-index: -1;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-style: $border-style;
+    }
+  }
+
+  #{$node}-content {
+    position: relative;
+    color: #000;
+
+    #{$node}-sub-line {
+      position: absolute;
+      z-index: -1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+        border-style: $border-style;
+      }
+    }
+  }
+
+  &:first-of-type {
+    > #{$node}-line {
+      &::before {
+        border-width: 0 0 0 0;
+      }
+    }
+  }
+
+  &:last-of-type {
+    > #{$node}-line {
+      &::after {
+        border-width: 0 0 0 0;
+      }
+    }
+  }
+
+  &.alone {
+    &:last-of-type {
+      > #{$node}-line {
+        &::before {
+          border-width: 0 0 $border-width 0;
+        }
+
+        &::after {
+          border-width: 0 0 0 0;
+        }
+      }
+    }
+  }
+
+  &.leaf {
+    > #{$node}-content {
+      #{$node}-sub-line {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.root {
+    > #{$node}-line {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
