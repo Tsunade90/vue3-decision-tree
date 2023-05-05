@@ -10,9 +10,8 @@ import { h } from "vue";
     const parent = this.$parent;
     const tree = parent.tree;
     const node = this.node;
-    const { data } = node;
-    return tree.$scopedSlots && tree.$scopedSlots.default
-      ? tree.$scopedSlots.default({ node, data })
+    return tree.$slots && tree.$slots.default
+      ? h("div", tree.$slots.default({ node, data: node.data }))
       : h("span", node.label || "");
   },
 })

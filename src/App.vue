@@ -29,10 +29,9 @@
       :props="{
         children: 'child',
       }"
-      #default="{ node, data }"
     >
-      <template>
-        <span>{{ data.label }}</span>
+      <template #default="{ node, data }">
+        <span class="custom-node">{{ data.label }}</span>
       </template>
     </DecisionTree>
   </div>
@@ -61,5 +60,10 @@ export default class App extends Vue {
 <style lang="scss">
 #app {
   padding: 80px 0 0 0;
+}
+
+.custom-node {
+  border: 1px solid blue;
+  padding: 10px;
 }
 </style>

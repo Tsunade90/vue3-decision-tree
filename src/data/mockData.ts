@@ -1,6 +1,7 @@
 export default [
   {
     label: "A",
+    type: "plant",
     child: [
       {
         label: "AB",

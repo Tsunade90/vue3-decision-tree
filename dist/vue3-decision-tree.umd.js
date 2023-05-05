@@ -2531,13 +2531,10 @@ NodeContent = __decorate([Options({
     const parent = this.$parent;
     const tree = parent.tree;
     const node = this.node;
-    const {
-      data
-    } = node;
-    return tree.$scopedSlots && tree.$scopedSlots.default ? tree.$scopedSlots.default({
+    return tree.$slots && tree.$slots.default ? (0,external_commonjs_vue_commonjs2_vue_root_Vue_.h)("div", tree.$slots.default({
       node,
-      data
-    }) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.h)("span", node.label || "");
+      data: node.data
+    })) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.h)("span", node.label || "");
   }
 })], NodeContent);
 /* harmony default export */ var NodeContentvue_type_script_lang_ts = (NodeContent);
