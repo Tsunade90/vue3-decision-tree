@@ -3,11 +3,20 @@
   "description": "Simple decision tree / relationship tree component",
   "version": "1.0.0",
   "author": "jowei <joweiblog@163.com> migrated to vue3/typescript by Helene Dal Bo <hdalbo@positivethinking.tech>",
+  "main": "dist/vue3-decision-tree.umd.min.js",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tsunade90/vue3-decision-tree.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue3-decision-tree src/components/DecisionTree/index.ts"
   },
   "dependencies": {
     "core-js": "^3.8.3",

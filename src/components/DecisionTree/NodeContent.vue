@@ -1,7 +1,7 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import { Prop } from "vue-property-decorator";
-import NodeModel from "@/models/node-model";
+import NodeModel from "../../models/node-model";
 import { h } from "vue";
 
 @Options({

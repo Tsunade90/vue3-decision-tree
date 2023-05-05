@@ -38,14 +38,13 @@
 </template>
 
 <script lang="ts">
-import { LineStyle } from "@/models/styles";
-import NodeModel from "@/models/node-model";
-import { NodeStyle } from "@/models/styles";
+import { LineStyle } from "../../models/styles";
+import NodeModel from "../../models/node-model";
+import { NodeStyle } from "../../models/styles";
 import { Options, Vue } from "vue-class-component";
 import { Prop } from "vue-property-decorator";
 import NodeContent from "./NodeContent.vue";
-import { NodeProps } from "@/models/node-props";
-import Tree from "./Tree.vue";
+import { NodeProps } from "../../models/node-props";
 
 @Options({
   name: "DecisionNode",

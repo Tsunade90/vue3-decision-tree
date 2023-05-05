@@ -19,9 +19,9 @@
 import { Options, Vue } from "vue-class-component";
 import DecisionNode from "./DecisionNode.vue";
 import { Prop } from "vue-property-decorator";
-import { TreeItem } from "@/models/tree-item";
-import { NodeProps } from "@/models/node-props";
-import NodeModel from "@/models/node-model";
+import { TreeItem } from "../../models/tree-item";
+import { NodeProps } from "../../models/node-props";
+import NodeModel from "../../models/node-model";
 
 @Options({
   components: {
