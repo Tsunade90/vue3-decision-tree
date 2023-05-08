@@ -1697,7 +1697,7 @@ if (typeof window !== 'undefined') {
 
 ;// CONCATENATED MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[2]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=c91b335e&ts=true
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[2]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=7e7e3623&ts=true
 
 const _hoisted_1 = {
   key: 0,
@@ -1719,7 +1719,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, null, 8, ["node", "props", "direction", "h-spacing", "v-spacing", "line-color", "render-content"]);
   }), 128))], 512)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true);
 }
-;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=c91b335e&ts=true
+;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=7e7e3623&ts=true
 
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
 function _typeof(obj) {
@@ -2451,7 +2451,7 @@ function Watch(path, options) {
     deep = _a === void 0 ? false : _a,
     _b = options.immediate,
     immediate = _b === void 0 ? false : _b;
-  return createDecorator(function (componentOptions, handler) {
+  return vue_class_component_esm_bundler_createDecorator(function (componentOptions, handler) {
     if (typeof componentOptions.watch !== 'object') {
       componentOptions.watch = Object.create(null);
     }
@@ -2748,6 +2748,12 @@ let DecisionTree = class DecisionTree extends Vue {
   }
   mounted() {
     this.isRoot = true;
+    this.createTreeNodes();
+  }
+  dataItemsChanged() {
+    this.createTreeNodes();
+  }
+  createTreeNodes() {
     this.root = new NodeModel({
       data: this.dataItems,
       props: this.props
@@ -2781,6 +2787,10 @@ DecisionTreevue_type_script_lang_ts_decorate([Prop({
     };
   }
 })], DecisionTree.prototype, "props", void 0);
+DecisionTreevue_type_script_lang_ts_decorate([Watch("dataItems", {
+  deep: true,
+  immediate: false
+})], DecisionTree.prototype, "dataItemsChanged", null);
 DecisionTree = DecisionTreevue_type_script_lang_ts_decorate([Options({
   components: {
     DecisionNode: DecisionTree_DecisionNode
