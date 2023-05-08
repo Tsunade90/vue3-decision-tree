@@ -1,22 +1,25 @@
 <template>
   <div v-if="root" class="decision-tree" ref="tree">
-    <DecisionNode
-      v-for="child in root.childNodes"
-      :node="child"
-      :props="props"
-      :key="child.key"
-      :direction="direction"
-      :h-spacing="hSpacing"
-      :v-spacing="vSpacing"
-      :line-color="lineColor"
-      :render-content="renderContent"
-    >
-    </DecisionNode>
+    <TransitionGroup name="fade">
+      <DecisionNode
+        v-for="child in root.childNodes"
+        :node="child"
+        :props="props"
+        :key="child.key"
+        :direction="direction"
+        :h-spacing="hSpacing"
+        :v-spacing="vSpacing"
+        :line-color="lineColor"
+        :render-content="renderContent"
+      >
+      </DecisionNode>
+    </TransitionGroup>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import { TransitionGroup } from "vue";
 import DecisionNode from "./DecisionNode.vue";
 import { Prop, Watch } from "vue-property-decorator";
 import { TreeItem } from "../../models/tree-item";
@@ -25,6 +28,7 @@ import NodeModel from "../../models/node-model";
 
 @Options({
   components: {
+    TransitionGroup,
     DecisionNode,
   },
 })
@@ -72,3 +76,26 @@ export default class DecisionTree extends Vue {
   }
 }
 </script>
+
+<style lang="scss">
+// Fade
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// List
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+</style>

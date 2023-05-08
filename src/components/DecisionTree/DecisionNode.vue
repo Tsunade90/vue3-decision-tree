@@ -124,10 +124,11 @@ export default class DecisionNode extends Vue {
   }
 
   created() {
+    //$parent.$parent because of the TransitionGroup
     const parent = this.$parent as any;
 
-    if (parent.isRoot) {
-      this.tree = parent;
+    if (parent.$parent.isRoot) {
+      this.tree = parent.$parent;
     } else {
       this.tree = parent.tree;
     }

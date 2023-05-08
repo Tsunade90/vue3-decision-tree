@@ -1697,7 +1697,7 @@ if (typeof window !== 'undefined') {
 
 ;// CONCATENATED MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[2]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=7e7e3623&ts=true
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[2]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=565490b4&ts=true
 
 const _hoisted_1 = {
   key: 0,
@@ -1706,20 +1706,25 @@ const _hoisted_1 = {
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_DecisionNode = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.resolveComponent)("DecisionNode");
-  return _ctx.root ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", _hoisted_1, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.renderList)(_ctx.root.childNodes, child => {
-    return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createBlock)(_component_DecisionNode, {
-      node: child,
-      props: _ctx.props,
-      key: child.key,
-      direction: _ctx.direction,
-      "h-spacing": _ctx.hSpacing,
-      "v-spacing": _ctx.vSpacing,
-      "line-color": _ctx.lineColor,
-      "render-content": _ctx.renderContent
-    }, null, 8, ["node", "props", "direction", "h-spacing", "v-spacing", "line-color", "render-content"]);
-  }), 128))], 512)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true);
+  return _ctx.root ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", _hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createVNode)(external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.TransitionGroup, {
+    name: "fade"
+  }, {
+    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.withCtx)(() => [((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.renderList)(_ctx.root.childNodes, child => {
+      return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createBlock)(_component_DecisionNode, {
+        node: child,
+        props: _ctx.props,
+        key: child.key,
+        direction: _ctx.direction,
+        "h-spacing": _ctx.hSpacing,
+        "v-spacing": _ctx.vSpacing,
+        "line-color": _ctx.lineColor,
+        "render-content": _ctx.renderContent
+      }, null, 8, ["node", "props", "direction", "h-spacing", "v-spacing", "line-color", "render-content"]);
+    }), 128))]),
+    _: 1
+  })], 512)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true);
 }
-;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=7e7e3623&ts=true
+;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionTree.vue?vue&type=template&id=565490b4&ts=true
 
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
 function _typeof(obj) {
@@ -2198,12 +2203,12 @@ function prop(options) {
   return options;
 }
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[2]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionNode.vue?vue&type=template&id=e1aec2b4&ts=true
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[2]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionNode.vue?vue&type=template&id=2ec25d58&ts=true
 
-const DecisionNodevue_type_template_id_e1aec2b4_ts_true_hoisted_1 = {
+const DecisionNodevue_type_template_id_2ec25d58_ts_true_hoisted_1 = {
   class: "vue-decision-tree-node-children"
 };
-function DecisionNodevue_type_template_id_e1aec2b4_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function DecisionNodevue_type_template_id_2ec25d58_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_node_content = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.resolveComponent)("node-content");
   const _component_DecisionNode = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.resolveComponent)("DecisionNode", true);
   return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
@@ -2225,7 +2230,7 @@ function DecisionNodevue_type_template_id_e1aec2b4_ts_true_render(_ctx, _cache, 
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)(_ctx.lineStyle)
   }, null, 4), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createVNode)(_component_node_content, {
     node: _ctx.node
-  }, null, 8, ["node"])], 4), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", DecisionNodevue_type_template_id_e1aec2b4_ts_true_hoisted_1, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.renderList)(_ctx.node.childNodes, child => {
+  }, null, 8, ["node"])], 4), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", DecisionNodevue_type_template_id_2ec25d58_ts_true_hoisted_1, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.renderList)(_ctx.node.childNodes, child => {
     return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createBlock)(_component_DecisionNode, {
       "render-content": _ctx.renderContent,
       key: child.key,
@@ -2238,7 +2243,7 @@ function DecisionNodevue_type_template_id_e1aec2b4_ts_true_render(_ctx, _cache, 
     }, null, 8, ["render-content", "node", "props", "direction", "h-spacing", "v-spacing", "line-color"]);
   }), 128))])], 6);
 }
-;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionNode.vue?vue&type=template&id=e1aec2b4&ts=true
+;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionNode.vue?vue&type=template&id=2ec25d58&ts=true
 
 ;// CONCATENATED MODULE: ./src/models/styles.ts
 
@@ -2600,9 +2605,10 @@ let DecisionNode = class DecisionNode extends Vue {
     return style;
   }
   created() {
+    //$parent.$parent because of the TransitionGroup
     const parent = this.$parent;
-    if (parent.isRoot) {
-      this.tree = parent;
+    if (parent.$parent.isRoot) {
+      this.tree = parent.$parent;
     } else {
       this.tree = parent.tree;
     }
@@ -2638,10 +2644,10 @@ DecisionNode = DecisionNodevue_type_script_lang_ts_decorate([Options({
 /* harmony default export */ var DecisionNodevue_type_script_lang_ts = (DecisionNode);
 ;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionNode.vue?vue&type=script&lang=ts
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionNode.vue?vue&type=style&index=0&id=e1aec2b4&lang=scss
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionNode.vue?vue&type=style&index=0&id=2ec25d58&lang=scss
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionNode.vue?vue&type=style&index=0&id=e1aec2b4&lang=scss
+;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionNode.vue?vue&type=style&index=0&id=2ec25d58&lang=scss
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(89);
@@ -2653,7 +2659,7 @@ var exportHelper = __webpack_require__(89);
 ;
 
 
-const DecisionNode_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(DecisionNodevue_type_script_lang_ts, [['render',DecisionNodevue_type_template_id_e1aec2b4_ts_true_render]])
+const DecisionNode_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(DecisionNodevue_type_script_lang_ts, [['render',DecisionNodevue_type_template_id_2ec25d58_ts_true_render]])
 
 /* harmony default export */ var DecisionTree_DecisionNode = (DecisionNode_exports_);
 ;// CONCATENATED MODULE: ./src/models/node-model.ts
@@ -2733,6 +2739,7 @@ var DecisionTreevue_type_script_lang_ts_decorate = undefined && undefined.__deco
 
 
 
+
 let DecisionTree = class DecisionTree extends Vue {
   constructor(...args) {
     super(...args);
@@ -2793,18 +2800,26 @@ DecisionTreevue_type_script_lang_ts_decorate([Watch("dataItems", {
 })], DecisionTree.prototype, "dataItemsChanged", null);
 DecisionTree = DecisionTreevue_type_script_lang_ts_decorate([Options({
   components: {
+    TransitionGroup: external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.TransitionGroup,
     DecisionNode: DecisionTree_DecisionNode
   }
 })], DecisionTree);
 /* harmony default export */ var DecisionTreevue_type_script_lang_ts = (DecisionTree);
 ;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionTree.vue?vue&type=script&lang=ts
  
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/DecisionTree/DecisionTree.vue?vue&type=style&index=0&id=565490b4&lang=scss
+// extracted by mini-css-extract-plugin
+
+;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionTree.vue?vue&type=style&index=0&id=565490b4&lang=scss
+
 ;// CONCATENATED MODULE: ./src/components/DecisionTree/DecisionTree.vue
 
 
 
 
 ;
+
+
 const DecisionTree_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(DecisionTreevue_type_script_lang_ts, [['render',render]])
 
 /* harmony default export */ var DecisionTree_DecisionTree = (DecisionTree_exports_);
