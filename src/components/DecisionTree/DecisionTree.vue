@@ -18,7 +18,7 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import DecisionNode from "./DecisionNode.vue";
-import { Prop } from "vue-property-decorator";
+import { Prop, Watch } from "vue-property-decorator";
 import { TreeItem } from "../../models/tree-item";
 import { NodeProps } from "../../models/node-props";
 import NodeModel from "../../models/node-model";
@@ -56,6 +56,15 @@ export default class DecisionTree extends Vue {
 
   mounted() {
     this.isRoot = true;
+    this.createTreeNodes();
+  }
+
+  @Watch("dataItems", { deep: true, immediate: false })
+  dataItemsChanged(): void {
+    this.createTreeNodes();
+  }
+
+  createTreeNodes(): void {
     this.root = new NodeModel({
       data: this.dataItems,
       props: this.props,

@@ -1,7 +1,7 @@
 {
   "name": "vue3-decision-tree",
   "description": "Simple decision tree / relationship tree component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "jowei <joweiblog@163.com> migrated to vue3/typescript by Helene Dal Bo <hdalbo@positivethinking.tech>",
   "main": "dist/vue3-decision-tree.umd.min.js",
   "private": false,

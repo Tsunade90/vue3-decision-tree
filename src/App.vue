@@ -31,7 +31,7 @@
       }"
     >
       <template #default="{ node, data }">
-        <span class="custom-node">{{ data.label }}</span>
+        <span>{{ data.label }}</span>
       </template>
     </DecisionTree>
   </div>
